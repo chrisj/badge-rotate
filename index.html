@@ -1,0 +1,26 @@
+<html>
+    <style>
+        body {
+            background-color: black;
+            perspective: 30vw;
+        }
+
+        div {
+            position: absolute;
+            background-image: url('./badge.svg');
+            background-size: cover;
+            width: 30vw;
+            height: 30vw;
+            top: calc(50% - 15vw);
+            left: calc(50% - 15vw);
+            animation: 2s ease-out rotate infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: scale(0) rotate3d(0, 1, 0, 180deg); }
+            20% { transform: scale(0) rotate3d(0, 1, 0, 180deg); }
+            to   { transform: scale(1) rotate3d(0, 1, 0, 360deg); }
+        }
+    </style>
+    <div></div>
+</html>
